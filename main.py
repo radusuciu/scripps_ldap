@@ -37,7 +37,7 @@ def get_first_and_last_name(identifier):
         user = query_ldap_user(identifier)
         return user.givenName.value, user.sn.value
     except UserNotFoundInLDAP:
-        return (None, None)
+        return ('', '')
 
 @click.command()
 @click.argument('username', nargs=-1)
