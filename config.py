@@ -1,0 +1,5 @@
+LDAP_URI = 'ldap://lj.ad.scripps.edu'
+LDAP_BIND_DN = 'example@scripps.edu'
+LDAP_BIND_PASSWORD = 'password'
+LDAP_BASE_DN = 'CN=Users,DC=lj,DC=ad,DC=scripps,DC=edu'
+LDAP_SEARCH_FILTER = '(sAMAccountName={})'
